@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %} Register {% endblock %}
+
+{% block content %}
+    <main>
+        <h4>Please Sign Up</h4>
+        <form action="{{ url_for ('register') }}" method="post" enctype="multipart/form-data">
+            <p>Name: <input class="name" type="text" name="username" placeholder="username" required/></p>
+            <p>Phone: <input type="tel" name="phone" placeholder="Phone Number" required></p>
+            <p>Password: <input type="text" name="password" placeholder="Password" required></p>
+            <p>Photo: <input type="file" name="photo" accept="image/*" required /></p>
+            <input type="submit" value="submit">
+        </form>
+    </main>
+{% endblock %}

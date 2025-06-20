@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} Register {% endblock %}
+
+{% block content %}
+    <main>
+        <h6>{{username}}</h6>
+        <img src="{{ url_for('static', filename='uploads/' + user.photo) }}" class="avatar">
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, aperiam corrupti 
+            assumenda recusandae illo cumque aspernatur voluptatum unde esse est iusto optio dignissimos 
+            expedita repellat ducimus? Enim pariatur laudantium harum. </p>
+    </main>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} Register {% endblock %}
+
+{% block content %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <div>{{msg}}. <br>Please Login </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+{% endblock %}
